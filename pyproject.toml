@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillflow"
+version = "1.0.0"
+description = "Search, discover, and install AI agent skills from the SkillFlow marketplace"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "Rafael Silva", email = "rafa.amaralsilva@gmail.com"}]
+keywords = ["ai", "agents", "skills", "mcp", "claude", "cursor", "copilot", "skillflow"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://skillflow.builders"
+Repository = "https://github.com/rafsilva85/skillflow-cli"
+Issues = "https://github.com/rafsilva85/skillflow-cli/issues"
+
+[project.scripts]
+skillflow = "skillflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["skillflow*"]
